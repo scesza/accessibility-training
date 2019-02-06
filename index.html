@@ -10,11 +10,12 @@
 </head>
 
 <body>
-  <div class="hero hero-bg is-fullheight">
-    <div class="hero-head">
+  <header class="hero hero-bg is-fullheight">
+    <a href="#main" class="a11y-skipLink">Skip navigation</a>
+    <header class="hero-head">
       <div class="navbar">
         <div class="container">
-          <div class="navbar-brand">
+          <nav aria-label="expandble navigation" class="navbar-brand">
             <a class="navbar-item has-text-white">
               <img src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;">
             </a>
@@ -23,9 +24,9 @@
               <span></span>
               <span></span>
             </span>
-          </div>
+          </nav>
 
-          <div id="navbarMenu" class="navbar-menu">
+          <nav id="navbarMenu" aria-label="main navigation" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item">
                 <a class="button is-white is-outlined">
@@ -60,12 +61,12 @@
                 </a>
               </span>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
-    </div>
+    </header>
 
-    <div class="hero-body">
+    <div class="hero-body" id="main">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <div class="title has-text-white">Engineering the Future</div>
@@ -521,7 +522,7 @@
                 &lt;title&gt;Hello World&lt;/title&gt;
                 &lt;/head&gt;
                 &lt;body&gt;
-                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Donec viverra nec nulla vitae mollis.&lt;/p&gt;
                 &lt;/body&gt;
             &lt;/html&gt;

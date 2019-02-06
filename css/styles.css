@@ -1,137 +1,226 @@
+*:focus,
+.button:active,
+.button:focus,
+.file-cta:active,
+.file-cta:focus,
+.file-name:active,
+.file-name:focus,
+.input:active,
+.input:focus,
+.is-active.button,
+.is-active.file-cta,
+.is-active.file-name,
+.is-active.input,
+.is-active.pagination-ellipsis,
+.is-active.pagination-link,
+.is-active.pagination-next,
+.is-active.pagination-previous,
+.is-active.textarea,
+.is-focused.button,
+.is-focused.file-cta,
+.is-focused.file-name,
+.is-focused.input,
+.is-focused.pagination-ellipsis,
+.is-focused.pagination-link,
+.is-focused.pagination-next,
+.is-focused.pagination-previous,
+.is-focused.textarea,
+.pagination-ellipsis:active,
+.pagination-ellipsis:focus,
+.pagination-link:active,
+.pagination-link:focus,
+.pagination-next:active,
+.pagination-next:focus,
+.pagination-previous:active,
+.pagination-previous:focus,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.textarea:active,
+.textarea:focus,
+.button.is-link.is-focused, .button.is-link:focus,
+.button.is-focused:not(:active), .button:focus:not(:active),
+.button.is-link.is-focused:not(:active), .button.is-link:focus:not(:active) {
+    outline: none;
+    border-color: #209cee;
+    box-shadow: 0px 0px 2px 2px rgba(32, 156, 238, 1),
+    0px 0px 3px 2px rgba(32, 156, 238, 0.2)
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.button.is-info,
+.tag:not(body).is-primary, .hero.is-info {
+    background-color: #112548;
+}
+
+.button.is-info:hover {
+    background-color: #1457ed;
+}
+
+.tag:not(body).is-danger{
+    background-color: #bb0328;
+}
+
+
+.a11y-skipLink {
+    position: absolute;
+    top: 7.3rem;
+    left: -999rem;
+    opacity: 0;
+    padding: .7rem 1.2rem;
+    background: #76cdd8;
+    color: #fff;
+    outline-offset: -2px;
+}
+
+body, .subtitle {
+    color: #191212;
+}
 .hero-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://unsplash.it/1200/900?random") no-repeat center center fixed;
-  background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://unsplash.it/1200/900?3") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .tabs {
-  margin-bottom: -1px !important;
-  position: relative;
+    margin-bottom: -1px !important;
+    position: relative;
 }
+
 .tab-content {
-  padding: 2rem;
+    padding: 2rem;
 }
+
 .tab-pane {
-  display: none;
+    display: none;
 }
+
 .tab-pane.is-active {
-  display: block;
-  position: relative;
+    display: block;
+    position: relative;
 }
+
 .is-active {
-  display: initial;
+    display: initial;
 }
 
 .cent {
-  display: block;
-  margin: 10px auto;
-  padding: 5px;
-  border: 1px solid #ccc;
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
 }
 
 .video {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
 }
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .box.cta {
-  border-radius: 0;
-  border-left: none;
-  border-right: none;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
 }
 
 .features,
 .medias {
-  padding: 3rem 0;
+    padding: 3rem 0;
 }
 
 .features .fa,
 .features .fab {
-  font-size: 8rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  color: #209cee;
+    font-size: 8rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #209cee;
 }
 
 .is-shady {
-  animation: flyintoright 0.4s backwards;
-  background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
-  border-radius: 4px;
-  display: inline-block;
-  margin: 10px;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.is-shady:hover {
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+    animation: flyintoright 0.4s backwards;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
 }
 
+.is-shady:hover {
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
 
 .has-same-height .card {
-  height: 350px;
-  overflow: hidden;
+    height: 350px;
+    overflow: hidden;
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+    margin-top: .5rem;
 }
 
 .skills-content .progress {
-  height: 4px !important;
+    height: 4px !important;
 }
 
 .section-heading {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+    margin: .75rem auto;
+    padding: 0 .75rem;
 }
 
 .button.is-primary.is-alt {
-  background: linear-gradient(to bottom, #0072ff, #00c6ff);
-  font-weight: 700;
-  font-size: 14px;
-  height: 3rem;
-  line-height: 2.8;
-  margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #0072ff, #00c6ff);
+    font-weight: 700;
+    font-size: 14px;
+    height: 3rem;
+    line-height: 2.8;
+    margin-bottom: 1rem;
 }
+
 .post {
-  margin: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E6EAEE;
 }
+
 .post:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+    margin-bottom: .5rem;
 }
 
-
 @media screen and (max-width: 1087px) {
-  .navbar-menu {
-    background-color: #888;
-  }
+    .navbar-menu {
+        background-color: #888;
+    }
 }
