@@ -53,6 +53,19 @@ button::-moz-focus-inner {
     border: 0;
 }
 
+/* skip link */
+.a11y-skipLink {
+    position: absolute;
+    top: 7.3rem;
+    left: -999rem;
+    opacity: 0;
+    padding: .7rem 1.2rem;
+    background: #76cdd8;
+    color: #fff;
+    outline-offset: -2px;
+}
+
+/* Contrast colors */
 .button.is-info,
 .tag:not(body).is-primary, .hero.is-info {
     background-color: #112548;
@@ -62,10 +75,66 @@ button::-moz-focus-inner {
     background-color: #1457ed;
 }
 
-.tag:not(body).is-danger{
+.tag:not(body).is-danger {
     background-color: #bb0328;
 }
 
+.button.is-white.is-outlined {
+    color: #ffffff;
+}
+
+.navbar-burger {
+    color: #ecdbdb;
+}
+
+.title, .card, .box, .card-header-title {
+    color: #decece;
+}
+
+.card, .box {
+    background-color: #49494b;
+}
+
+body, .subtitle {
+    color: #fbefef;
+}
+
+a {
+    color: #f7afaf;
+}
+
+a:hover {
+    color: #d0caca;
+    text-decoration: underline;
+}
+
+.has-background-grey-light {
+    background-color: #666666 !important;
+}
+
+.has-background-grey-lighter {
+    background-color: #676767 !important;
+}
+
+.has-text-grey-light {
+    color: #d4c9c9 !important;
+}
+
+.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+    color: #0966a5;
+}
+
+.content blockquote {
+    color: #963d56;
+}
+
+.content table th {
+    background-color: #f5f5f5;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: #c7c1c1;
+}
 
 .a11y-skipLink {
     position: absolute;
@@ -78,12 +147,10 @@ button::-moz-focus-inner {
     outline-offset: -2px;
 }
 
-body, .subtitle {
-    color: #191212;
-}
+/* fix background image to local source*/
 .hero-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://unsplash.it/1200/900?3") no-repeat center center fixed;
+    url("../assets/900.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -155,12 +222,12 @@ body, .subtitle {
     font-size: 8rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: #209cee;
+    color: #f7afaf;
 }
 
 .is-shady {
     animation: flyintoright 0.4s backwards;
-    background: #fff;
+    background: #791f32;
     box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
     border-radius: 4px;
     display: inline-block;
@@ -215,12 +282,16 @@ body, .subtitle {
     border-bottom: none;
 }
 
+.card-header-title {
+    justufy-content: space-between;
+}
+
 .forum-list li {
     margin-bottom: .5rem;
 }
 
 @media screen and (max-width: 1087px) {
     .navbar-menu {
-        background-color: #888;
+        background-color: #49494b;
     }
 }
