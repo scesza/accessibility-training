@@ -10,12 +10,12 @@
 </head>
 
 <body>
-  <header class="hero hero-bg is-fullheight">
+  <div class="hero hero-bg is-fullheight">
     <a href="#main" class="a11y-skipLink">Skip navigation</a>
     <header class="hero-head">
       <div class="navbar">
         <div class="container">
-          <nav aria-label="expandble navigation" class="navbar-brand">
+          <nav aria-label="expanadble navigation" class="navbar-brand">
             <a class="navbar-item has-text-white">
               <img alt='epam logo' src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;">
             </a>
@@ -69,7 +69,7 @@
     <div class="hero-body" id="main">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <div class="title has-text-white">Engineering the Future</div>
+          <div class="title has-text-white" role="heading" aria-level="1">Engineering the Future</div>
           <div class="subtitle has-text-white">
             $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
           </div>
@@ -79,7 +79,7 @@
                 <input class="input">
               </p>
               <p class="control">
-                <a class="button is-info">Notify Me</a>
+                <a class="button is-info" role="button">Notify Me</a>
               </p>
             </div>
           </div>
@@ -92,11 +92,11 @@
         <span class="tag is-primary">New</span> Headless CMS improves customer experience and offers greater flexibility
       </div>
     </div>
-  </div>
 
-  <div class="section" id="about">
+
+  <section class="section" aria-label="About Us">
     <div class="section-heading has-text-centered">
-      <div class="title is-2">About Us</div>
+      <div class="title is-2" role="heading" aria-level="2">About Us</div>
       <div class="subtitle is-5">We of all trades, master of "some"</div>
       <div class="container">
         <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
@@ -112,7 +112,7 @@
       <div class="column">
         <div class="card">
           <div class="card-content">
-            <div class="title is-4">Profile</div>
+            <div class="title is-4" role="heading" aria-level="4">Profile</div>
 
             <div class="content">
               <table class="table-profile">
@@ -147,7 +147,7 @@
         <div class="card">
           <div class="card-image">
             <div class="image">
-              <img alt="profile image" src="https://source.unsplash.com/random/300x300/?sig=22">
+              <img alt="github profile image" src="https://source.unsplash.com/random/300x300/?sig=22">
             </div>
           </div>
         </div>
@@ -156,7 +156,7 @@
       <div class="column">
         <div class="card">
           <div class="card-content skills-content">
-            <div class="title is-4">Skills</div>
+            <div class="title is-4" role="heading" aria-level="4">Skills</div>
             <div class="content">
               <div class="media">
                 <div class="media-content">
@@ -222,7 +222,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="has-background-danger">
     <div class="info-tiles container">
@@ -255,10 +255,10 @@
     </div>
   </div>
 
-  <div class="hero has-background-grey-light">
+  <section class="hero has-background-grey-light" aria-labelledby="keyFeatures-label">
     <div class="container features">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Three key features</div>
+        <div class="title is-2" id="keyFeatures-label" role="heading" aria-level="2">Three key features</div>
         <div class="subtitle is-5">We don't hide what we do</div>
       </div>
 
@@ -310,7 +310,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <div class="hero is-info">
     <div class="hero-body">
@@ -320,7 +320,7 @@
       </div>
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
-      <ul>
+      <ul role="tablist">
         <li data-target="pane-1" id="1">
           <a>
             <span class="icon is-small"><i class="fa fa-image"></i></span>
@@ -350,14 +350,14 @@
   </div>
 
   <div class="tab-content container">
-    <div class="tab-pane" id="pane-1" class="level">
+    <div role="tabpanel" class="tab-pane" id="pane-1" class="level">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="https://source.unsplash.com/random/?sig=1"  alt="article image1" class="modal-button" data-target="modal-image1">
+                  <img src="https://source.unsplash.com/random/?sig=1"  alt="random image description" class="modal-button" data-target="modal-image1">
                 </div>
               </div>
               <div class="card-content">
@@ -390,7 +390,7 @@
             <div class="card">
               <div class="card-image">
                 <div class="image is-4by3">
-                  <img src="https://source.unsplash.com/random/?sig=3" class="modal-button" data-target="modal-image2">
+                  <img src="https://source.unsplash.com/random/?sig=3" alt="image description" class="modal-button" data-target="modal-image2">
                 </div>
               </div>
               <div class="card-content">
@@ -406,7 +406,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-3">
+    <div role="tabpanel" class="tab-pane" id="pane-3">
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -467,7 +467,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-4">
+    <div role="tabpanel" class="tab-pane" id="pane-4">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Inspired video</div>
@@ -478,7 +478,7 @@
       </div>
     </div>
 
-    <div class="tab-pane is-active" id="pane-2">
+    <div role="tabpanel" class="tab-pane is-active" id="pane-2">
       <div class="content">
         <div class="is-1 title">Hello World</div>
         <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
@@ -571,10 +571,10 @@
     </div>
   </div>
 
-  <div class="section has-background-grey-lighter">
+  <section class="section has-background-grey-lighter" aria-label="Tours">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
-          <div class="title is-2">Tours</div>
+          <div id="tour-label" class="title is-2" role="heading" aria-level="2"> >Tours</div>
           <div class="subtitle is-5">Outcoming dates for the best options</div>
         </div>
 
@@ -582,7 +582,7 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=100">
+              <img alt="" src="https://source.unsplash.com/random/256x170/?sig=100">
             </div>
             <p class="title">New York</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
@@ -644,11 +644,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section" aria-labelledby="#services-label">
     <div class="section-heading has-text-centered">
-      <div class="title is-2">Services</div>
+      <div id="services-label" class="title is-2" role="heading" aria-level="2">Services</div>
       <div class="subtitle is-5">What can I do for you?</div>
     </div>
     <div class="container">
@@ -692,12 +692,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section has-background-grey-lighter">
+  <section class="section has-background-grey-lighter" aria-labelledby="#portfolio-label">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Portfolio</div>
+        <div id="portfolio-label" class="title is-2" role="heading" aria-level="2">Portfolio</div>
         <div class="subtitle is-5">Our latest works</div>
       </div>
 
@@ -858,13 +858,13 @@
         </div>
       </div>
     </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="section">
+
+  <section class="section" aria-labelledby="#forum-label">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Forum</div>
+        <div id="forum-label" class="title is-2" role="heading" aria-level="2">Forum</div>
         <div class="subtitle is-5">Discuss any topic with no leaving this page</div>
       </div>
 
@@ -1020,27 +1020,27 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="section has-background-grey-lighter">
+  <section class="section has-background-grey-lighter" aria-labelledby="#contactUS-label">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <div class="title is-2">Contact us</div>
+        <div id="contactUS-label" class="title is-2" role="heading" aria-level="2">Contact us</div>
         <div class="subtitle is-5">Don't hesitate, ask anything</div>
       </div>
 
       <form class="column is-half is-offset-one-quarter box">
         <div class="field">
-          <label class="label">Name</label>
+          <label class="label" for="name">Name</label>
           <div class="control">
-            <input class="input" type="text" placeholder="Text input">
+            <input class="input"  id="name" type="text" placeholder="Text input">
           </div>
         </div>
 
         <div class="field">
-          <label class="label">Username</label>
+          <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text">
+            <input class="input is-success" id="username"type="text">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -1052,9 +1052,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Email</label>
+          <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+            <input class="input is-danger" id="email" type="email" placeholder="Email input" value="hello@">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -1066,10 +1066,10 @@
         </div>
 
         <div class="field">
-          <label class="label">Subject</label>
+          <label class="label" for="select">Subject</label>
           <div class="control">
             <div class="select">
-              <select>
+              <select id="select">
                 <option>Select dropdown</option>
                 <option>With options</option>
               </select>
@@ -1078,9 +1078,9 @@
         </div>
 
         <div class="field">
-          <label class="label">Message</label>
+          <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea class="textarea" placeholder="Textarea"></textarea>
+            <textarea class="textarea" id="message" placeholder="Textarea"></textarea>
           </div>
         </div>
 
@@ -1116,9 +1116,9 @@
         </div>
       </form>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section" aria-labelledby="#column-label">
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-one-third">
@@ -1130,7 +1130,7 @@
             </div>
             <div class="media-content">
               <div class="content">
-                <div class="title is-size-4">Columns</div>
+                <div id="column-label" class="title is-size-4" role="heading" aria-level="2">Columns</div>
                 <p class="is-size-5 subtitle">
                   The power of <b>Flexbox</b> in a simple interface
                 </p>
@@ -1225,13 +1225,14 @@
         </div>
       </div>
     </div>
+  </section>
   </div>
 
-  <div class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="columns">
         <div class="column is-3 is-offset-2">
-          <div class="is-3 title"><b>Lessons</b></div>
+          <div class="is-3 title" role="heading" aria-level="3"><b>Lessons</b></div>
           <ul>
             <li><a>Lorem ipsum dolor sit amet</a></li>
             <li><a>Vestibulum errato isse</a></li>
@@ -1243,7 +1244,7 @@
           </ul>
         </div>
         <div class="column is-3">
-          <div class="is-3 title"><b>News</b></div>
+          <div class="is-3 title" role="heading" aria-level="3"><b>News</b></div>
           <ul>
             <li><a>Labore et dolore magna aliqua</a></li>
             <li><a>Kanban airis sum eschelor</a></li>
@@ -1255,7 +1256,7 @@
           </ul>
         </div>
         <div class="column is-4">
-          <div class="is-3 title"><b>Help</b></div>
+          <div class="is-3 title" role="heading" aria-level="3"><b>Help</b></div>
           <ul>
             <li><a>Objects in space</a></li>
             <li><a>Playing cards with coyote</a></li>
@@ -1276,7 +1277,7 @@
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
   <div id="modal-card" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
@@ -1284,14 +1285,14 @@
       <div class="card">
         <div class="card-image">
           <div class="image is-4by3">
-            <img src="https://source.unsplash.com/random/?sig=2">
+            <img alt="card random image" src="https://source.unsplash.com/random/?sig=2">
           </div>
         </div>
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <div class="image is-48x48">
-                <img src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
+                <img alt="Linda barret avatar" src="http://www.radfaces.com/images/avatars/linda-barret.jpg">
               </div>
             </div>
             <div class="media-content">
@@ -1319,7 +1320,7 @@
   <div id="modal-image1" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
-      <img src="https://source.unsplash.com/random/?sig=1">
+      <img alt="random image description" src="https://source.unsplash.com/random/?sig=1">
     </div>
     <button class="modal-close is-large"></button>
   </div>
@@ -1327,7 +1328,7 @@
   <div id="modal-image2" class="modal modal-fx-superScaled">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
-      <img src="https://source.unsplash.com/random/?sig=3">
+      <img  alt="random image description"src="https://source.unsplash.com/random/?sig=3">
     </div>
     <button class="modal-close is-large"></button>
   </div>
