@@ -136,6 +136,38 @@ a:hover {
     color: #c7c1c1;
 }
 
+.tag:not(body).is-success{
+    color: #241f63;
+}
+
+.label {
+    color: #e8e0e0;
+}
+
+.help.is-success {
+    color: #58d684;
+}
+
+.help.is-danger {
+    color: #f7b2c0;
+}
+
+.input::placeholder, .textarea::placeholder {
+    color: #241f63;
+}
+
+.checkbox:hover, .radio:hover {
+    color: #b0f3ea;
+}
+
+.notification .content, .notification .subtitle, .notification .title {
+    color: #0966a5;
+}
+
+.footer {
+    background-color: #363636;
+}
+
 .a11y-skipLink {
     position: absolute;
     top: 7.3rem;
@@ -269,6 +301,7 @@ a:hover {
     height: 3rem;
     line-height: 2.8;
     margin-bottom: 1rem;
+    color: #241f63;
 }
 
 .post {
