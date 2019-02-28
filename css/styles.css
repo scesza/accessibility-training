@@ -66,6 +66,10 @@ button::-moz-focus-inner {
 }
 
 /* Contrast colors */
+.navbar {
+    background: #49494b;
+}
+
 .button.is-info,
 .tag:not(body).is-primary, .hero.is-info {
     background-color: #112548;
@@ -305,7 +309,7 @@ a:hover {
 }
 
 .card-header-title {
-    justufy-content: space-between;
+    justify-content: space-between;
 }
 
 .forum-list li {

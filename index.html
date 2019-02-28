@@ -10,63 +10,62 @@
 </head>
 
 <body>
-  <div class="hero hero-bg is-fullheight">
+  <header class="hero-head">
     <a href="#main" class="a11y-skipLink">Skip navigation</a>
-    <header class="hero-head">
-      <div class="navbar">
-        <div class="container">
-          <nav aria-label="expandable navigation" class="navbar-brand">
-            <a class="navbar-item has-text-white" href="https://www.epam.com/">
-              <img alt='epam logo' src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;">
-            </a>
-            <span role="button" aria-haspopup="true" aria-label="Toggle menu button" class="navbar-burger burger" data-target="navbarMenu">
-              <span  aria-hidden="true" ></span>
-              <span  aria-hidden="true"></span>
-              <span  aria-hidden="true" ></span>
-            </span>
-          </nav>
-
-          <nav id="navbarMenu" aria-label="main navigation" class="navbar-menu">
-            <div class="navbar-end">
-              <span role="menuitem" class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fa fa-home"></i>
-                  </span>
-                  <span>Home</span>
-                </a>
-              </span>
-              <span role="menuitem"  class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fab fa-superpowers"></i>
-                  </span>
-                  <span>Examples</span>
-                </a>
-              </span>
-              <span role="menuitem"  class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fa fa-book"></i>
-                  </span>
-                  <span>Documentation</span>
-                </a>
-              </span>
-              <span role="menuitem" class="navbar-item">
-                <a class="button is-white is-outlined">
-                  <span class="icon">
-                    <i class="fab fa-github"></i>
-                  </span>
-                  <span>View Source</span>
-                </a>
-              </span>
-            </div>
-          </nav>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item has-text-white" href="https://www.epam.com/">
+            <img alt='epam logo' src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;">
+          </a>
+          <span role="button" aria-haspopup="true" aria-label="Toggle menu button" class="navbar-burger burger" data-target="navbarMenu">
+            <span  aria-hidden="true" ></span>
+            <span  aria-hidden="true"></span>
+            <span  aria-hidden="true" ></span>
+          </span>
         </div>
-      </div>
-    </header>
 
-    <main>
+        <nav id="navbarMenu" aria-label="main navigation" class="navbar-menu">
+          <div class="navbar-end">
+                <span role="menuitem" class="navbar-item">
+                  <a href="#" class="button is-white is-outlined">
+                    <span class="icon" aria-hidden="true">
+                      <i class="fa fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                  </a>
+                </span>
+            <span role="menuitem"  class="navbar-item">
+                  <a href="#" class="button is-white is-outlined">
+                    <span class="icon" aria-hidden="true">
+                      <i class="fab fa-superpowers" ></i>
+                    </span>
+                    <span>Examples</span>
+                  </a>
+                </span>
+            <span role="menuitem"  class="navbar-item">
+                  <a href="#" class="button is-white is-outlined">
+                    <span class="icon" aria-hidden="true">
+                      <i class="fa fa-book"></i>
+                    </span>
+                    <span>Documentation</span>
+                  </a>
+                </span>
+            <span role="menuitem" class="navbar-item">
+                  <a  href="#" class="button is-white is-outlined">
+                    <span class="icon" aria-hidden="true">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>View Source</span>
+                  </a>
+                </span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero hero-bg is-fullheight">
     <section class="hero-body" id="main" aria-labelleby="mainTitle" tabindex="0">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
@@ -94,8 +93,7 @@
       </div>
     </section>
 
-
-  <section class="section" aria-label="About Us">
+    <section class="section" aria-label="About Us">
     <div class="section-heading has-text-centered">
       <div class="title is-2" role="heading" aria-level="2">About Us</div>
       <div class="subtitle is-5">We of all trades, master of "some"</div>
@@ -225,7 +223,7 @@
     </div>
   </section>
 
-  <section aria-label="Our achievements in numbers" class="has-background-danger">
+    <section aria-label="Our achievements in numbers" class="has-background-danger">
     <div class="info-tiles container">
       <div class="tile is-ancestor has-text-centered">
           <div class="tile is-parent">
@@ -256,7 +254,7 @@
     </div>
   </section>
 
-  <section class="hero has-background-grey-light" aria-labelledby="keyFeatures-label">
+    <section class="hero has-background-grey-light" aria-labelledby="keyFeatures-label">
     <div class="container features">
       <div class="section-heading has-text-centered">
         <div class="title is-2" id="keyFeatures-label" role="heading" aria-level="2">Three key features</div>
@@ -312,7 +310,7 @@
       </div>
     </div>
   </section>
-  <section aria-label="List of topics">
+    <section aria-label="List of topics">
     <div class="hero is-info">
     <div class="hero-body">
       <div class="container">
@@ -562,7 +560,7 @@
     </div>
   </div>
   </section>
-  <section class="section has-background-grey-lighter" aria-label="Tours">
+    <section class="section has-background-grey-lighter" aria-label="Tours">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
           <div id="tour-label" class="title is-2" role="heading" aria-level="2"> Tours</div>
@@ -637,7 +635,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="services-label">
+    <section class="section" aria-labelledby="services-label">
     <div class="section-heading has-text-centered">
       <div id="services-label" class="title is-2" role="heading" aria-level="2">Services</div>
       <div class="subtitle is-5">What can I do for you?</div>
@@ -685,7 +683,7 @@
     </div>
   </section>
 
-  <section class="section has-background-grey-lighter" aria-labelledby="portfolio-label">
+    <section class="section has-background-grey-lighter" aria-labelledby="portfolio-label">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div id="portfolio-label" class="title is-2" role="heading" aria-level="2">Portfolio</div>
@@ -851,7 +849,7 @@
     </div>
     </section>
 
-  <section class="section" aria-labelledby="forum-label">
+    <section class="section" aria-labelledby="forum-label">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div id="forum-label" class="title is-2" role="heading" aria-level="2">Forum</div>
@@ -1012,7 +1010,7 @@
     </div>
   </section>
 
-  <section class="section has-background-grey-lighter" aria-labelledby="contactUS-label">
+    <section class="section has-background-grey-lighter" aria-labelledby="contactUS-label">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div id="contactUS-label" class="title is-2" role="heading" aria-level="2">Contact us</div>
@@ -1108,7 +1106,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="column-label">
+    <section class="section" aria-labelledby="column-label">
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-one-third">
@@ -1216,8 +1214,7 @@
       </div>
     </div>
   </section>
-    </main>
-  </div>
+  </main>
 
   <footer class="footer">
     <div class="container">
@@ -1225,45 +1222,45 @@
         <div class="column is-3 is-offset-2">
           <div class="is-3 title" role="heading" aria-level="3"><b>Lessons</b></div>
           <ul>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Vestibulum errato isse</a></li>
-            <li><a>Lorem ipsum dolor sit amet</a></li>
-            <li><a>Aisia caisia</a></li>
-            <li><a>Murphy's law</a></li>
-            <li><a>Flimsy Lavenrock</a></li>
-            <li><a>Maven Mousie Lavender</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Vestibulum errato isse</a></li>
+            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+            <li><a href="#">Aisia caisia</a></li>
+            <li><a href="#">Murphy's law</a></li>
+            <li><a href="#">Flimsy Lavenrock</a></li>
+            <li><a href="#">Maven Mousie Lavender</a></li>
           </ul>
         </div>
         <div class="column is-3">
           <div class="is-3 title" role="heading" aria-level="3"><b>News</b></div>
           <ul>
-            <li><a>Labore et dolore magna aliqua</a></li>
-            <li><a>Kanban airis sum eschelor</a></li>
-            <li><a>Modular modern free</a></li>
-            <li><a>The king of clubs</a></li>
-            <li><a>The Discovery Dissipation</a></li>
-            <li><a>Course Correction</a></li>
-            <li><a>Better Angels</a></li>
+            <li><a href="#">Labore et dolore magna aliqua</a></li>
+            <li><a href="#">Kanban airis sum eschelor</a></li>
+            <li><a href="#">Modular modern free</a></li>
+            <li><a href="#">The king of clubs</a></li>
+            <li><a href="#">The Discovery Dissipation</a></li>
+            <li><a href="#">Course Correction</a></li>
+            <li><a href="#">Better Angels</a></li>
           </ul>
         </div>
         <div class="column is-4">
           <div class="is-3 title" role="heading" aria-level="3"><b>Help</b></div>
           <ul>
-            <li><a>Objects in space</a></li>
-            <li><a>Playing cards with coyote</a></li>
-            <li><a>Goodbye Yellow Brick Road</a></li>
-            <li><a>The Garden of Forking Paths</a></li>
-            <li><a>Future Shock</a></li>
+            <li><a href="#">Objects in space</a></li>
+            <li><a href="#">Playing cards with coyote</a></li>
+            <li><a href="#">Goodbye Yellow Brick Road</a></li>
+            <li><a href="#">The Garden of Forking Paths</a></li>
+            <li><a href="#">Future Shock</a></li>
           </ul>
         </div>
       </div>
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a><i class="fab fa-github-alt fa-2x"></i></a>
-          <a><i class="fab fa-youtube fa-2x"></i></a>
-          <a><i class="fab fa-facebook fa-2x"></i></a>
-          <a><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" aria-label="go to github"><i aria-hidden="true" class="fab fa-github-alt fa-2x"></i></a>
+          <a href="#" aria-label="go to youtube"><i aria-hidden="true" class="fab fa-youtube fa-2x"></i></a>
+          <a href="#" aria-label="go to facebook"><i aria-hidden="true" class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" aria-label="go to twitter"><i aria-hidden="true" class="fab fa-twitter fa-2x"></i></a>
         </div>
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.</p>
       </div>
@@ -1316,9 +1313,9 @@
     <button aria-label="Close dialog button" class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image2" role="dialog" ria-label="Dialog with random image" class="modal modal-fx-superScaled">
+  <div id="modal-image2" role="dialog" aria-label="Dialog with random image" class="modal modal-fx-superScaled">
     <div class="modal-background"></div>
-    <div class="modal-content  is-image">
+    <div class="modal-content is-image">
       <img  alt="random image description" src="https://source.unsplash.com/random/?sig=3">
     </div>
     <button aria-label="Close dialog button"  class="modal-close is-large"></button>
