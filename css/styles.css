@@ -140,7 +140,7 @@ a:hover {
     color: #c7c1c1;
 }
 
-.tag:not(body).is-success{
+.tag:not(body).is-success {
     color: #241f63;
 }
 
@@ -189,12 +189,12 @@ a:hover {
 }
 
 /*.tab-pane {*/
-    /*display: none;*/
+/*display: none;*/
 /*}*/
 
 /*.tab-pane.is-active {*/
-    /*display: block;*/
-    /*position: relative;*/
+/*display: block;*/
+/*position: relative;*/
 /*}*/
 
 .is-active {
@@ -321,10 +321,12 @@ a:hover {
         background-color: #49494b;
     }
 }
+
 .colorful {
     color: #ff3860;
     font-weight: bold;
 }
+
 .title.is-3 {
     font-weight: bold;
 }
