@@ -15,14 +15,14 @@
     <header class="hero-head">
       <div class="navbar">
         <div class="container">
-          <nav aria-label="expanadble navigation" class="navbar-brand">
-            <a class="navbar-item has-text-white">
+          <nav aria-label="expandable navigation" class="navbar-brand">
+            <a class="navbar-item has-text-white" href="https://www.epam.com/">
               <img alt='epam logo' src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg" style="width: 100%;">
             </a>
-            <span class="navbar-burger burger" data-target="navbarMenu">
-              <span></span>
-              <span></span>
-              <span></span>
+            <span role="button" aria-haspopup="true" aria-label="Toggle menu button" class="navbar-burger burger" data-target="navbarMenu">
+              <span  aria-hidden="true" ></span>
+              <span  aria-hidden="true"></span>
+              <span  aria-hidden="true" ></span>
             </span>
           </nav>
 
@@ -66,17 +66,18 @@
       </div>
     </header>
 
-    <div class="hero-body" id="main" tabindex="0">
+    <main>
+    <section class="hero-body" id="main" aria-labelleby="mainTitle" tabindex="0">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
-          <div class="title has-text-white" role="heading" aria-level="1">Engineering the Future</div>
+          <div class="title has-text-white" id="mainTitle" role="heading" aria-level="1">Engineering the Future</div>
           <div class="subtitle has-text-white">
             $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
           </div>
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input">
+                <input class="input" aria-label="enter email address to subscribe">
               </p>
               <p class="control">
                 <a class="button is-info" role="button">Notify Me</a>
@@ -85,13 +86,13 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="box cta">
+    <section class="box cta" aria-label="new features">
       <div class="has-text-centered">
-        <span class="tag is-primary">New</span> Headless CMS improves customer experience and offers greater flexibility
+        <span role="button" class="tag is-primary">New</span> Headless CMS improves customer experience and offers greater flexibility
       </div>
-    </div>
+    </section>
 
 
   <section class="section" aria-label="About Us">
@@ -224,7 +225,7 @@
     </div>
   </section>
 
-  <div class="has-background-danger">
+  <section aria-label="Our achievements in numbers" class="has-background-danger">
     <div class="info-tiles container">
       <div class="tile is-ancestor has-text-centered">
           <div class="tile is-parent">
@@ -253,7 +254,7 @@
           </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <section class="hero has-background-grey-light" aria-labelledby="keyFeatures-label">
     <div class="container features">
@@ -311,11 +312,11 @@
       </div>
     </div>
   </section>
-
-  <div class="hero is-info">
+  <section aria-label="List of topics">
+    <div class="hero is-info">
     <div class="hero-body">
       <div class="container">
-        <div class="title">List of topics</div>
+        <div class="title" role="heading" aria-level="2">List of topics</div>
         <div class="subtitle">We are always in touch we the outside world</div>
       </div>
     </div>
@@ -340,9 +341,8 @@
       </div>
     </div>
   </div>
-
-  <div class="tab-content container">
-    <div role="tabpanel" tabindex="0" id="pane-1" aria-labelledby="pictures" hidden="" class="tab-pane level">
+    <div class="tab-content container">
+    <div role="tabpanel" tabindex="0" id="pane-1" aria-labelledby="pictures" hidden="" class="tab-pane">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -373,7 +373,7 @@
                   <div>Tempor orci dapibus ultrices in.</div>
                   <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+                  <span role="button" class="button is-link modal-button" data-target="modal-card">Modal Card</span>
                 </div>
               </div>
             </div>
@@ -561,7 +561,7 @@
       </div>
     </div>
   </div>
-
+  </section>
   <section class="section has-background-grey-lighter" aria-label="Tours">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
@@ -637,7 +637,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="#services-label">
+  <section class="section" aria-labelledby="services-label">
     <div class="section-heading has-text-centered">
       <div id="services-label" class="title is-2" role="heading" aria-level="2">Services</div>
       <div class="subtitle is-5">What can I do for you?</div>
@@ -685,7 +685,7 @@
     </div>
   </section>
 
-  <section class="section has-background-grey-lighter" aria-labelledby="#portfolio-label">
+  <section class="section has-background-grey-lighter" aria-labelledby="portfolio-label">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div id="portfolio-label" class="title is-2" role="heading" aria-level="2">Portfolio</div>
@@ -851,8 +851,7 @@
     </div>
     </section>
 
-
-  <section class="section" aria-labelledby="#forum-label">
+  <section class="section" aria-labelledby="forum-label">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div id="forum-label" class="title is-2" role="heading" aria-level="2">Forum</div>
@@ -1013,7 +1012,7 @@
     </div>
   </section>
 
-  <section class="section has-background-grey-lighter" aria-labelledby="#contactUS-label">
+  <section class="section has-background-grey-lighter" aria-labelledby="contactUS-label">
     <div class="container">
       <div class="section-heading has-text-centered">
         <div id="contactUS-label" class="title is-2" role="heading" aria-level="2">Contact us</div>
@@ -1109,7 +1108,7 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="#column-label">
+  <section class="section" aria-labelledby="column-label">
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-one-third">
@@ -1217,6 +1216,7 @@
       </div>
     </div>
   </section>
+    </main>
   </div>
 
   <footer class="footer">
@@ -1270,7 +1270,7 @@
     </div>
   </footer>
 
-  <div id="modal-card" class="modal modal-fx-3dSlit">
+  <div id="modal-card" role="dialog" aria-labelledby="modal-label" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-tiny">
       <div class="card">
@@ -1287,7 +1287,7 @@
               </div>
             </div>
             <div class="media-content">
-              <div class="title is-4">Jane Doe</div>
+              <div id="modal-label" class="title is-4">Jane Doe</div>
               <div class="subtitle is-6">@jane_doe</div>
             </div>
           </div>
@@ -1296,32 +1296,32 @@
             Bean's dinnahbucket bub geez bud sumpin' fierce ayuhpawt Bangah naw, Powrtland Museum of Aht down cellah sumpin' fierce hoppa bub If you can't stand the wintah you don't deserve the summah slower than molasses going uphill in January.
             Sgn'wahl shoggor hrii uaaah R'lyeh uh'e k'yarnak Hastur hupadgh li'hee, hai f'nilgh'ri nilgh'ri n'ghftor ngftaghu vulgtlagln h'hrii throd Nyarlathotep lloig, naflsll'ha nnnsll'ha athg y-ebunma goka chtenff ehyeog cehye. Zhro y'hah
             nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
-            <a>@testio</a>.
-            <a>#css</a>
-            <a>#responsive</a>
+            <a href="#">@testio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
             <br>
             <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
           </div>
         </div>
       </div>
     </div>
-    <button class="modal-close is-large"></button>
+    <button aria-label="Close dialog button" class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image1" class="modal modal-fx-3dSlit">
+  <div id="modal-image1" role="dialog" aria-label="Dialog with random image"  class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
     <div class="modal-content is-huge is-image">
       <img alt="random image description" src="https://source.unsplash.com/random/?sig=1">
     </div>
-    <button class="modal-close is-large"></button>
+    <button aria-label="Close dialog button" class="modal-close is-large"></button>
   </div>
 
-  <div id="modal-image2" class="modal modal-fx-superScaled">
+  <div id="modal-image2" role="dialog" ria-label="Dialog with random image" class="modal modal-fx-superScaled">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
       <img  alt="random image description" src="https://source.unsplash.com/random/?sig=3">
     </div>
-    <button class="modal-close is-large"></button>
+    <button aria-label="Close dialog button"  class="modal-close is-large"></button>
   </div>
 
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
