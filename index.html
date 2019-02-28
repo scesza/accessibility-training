@@ -571,31 +571,31 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img alt="" src="https://source.unsplash.com/random/256x170/?sig=100">
+              <img alt="picture of New York" src="https://source.unsplash.com/random/256x170/?sig=100">
             </div>
-            <p class="title">New York</p>
+            <p class="title" role="heading" aria-level="3">New York</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=101">
+              <img alt="picture of Los Angeles" src="https://source.unsplash.com/random/256x170/?sig=101">
             </div>
-            <p class="title">Los Angeles</p>
+            <p class="title" role="heading" aria-level="3">Los Angeles</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=102">
+              <img alt="picture of Mexico" src="https://source.unsplash.com/random/256x170/?sig=102">
             </div>
-            <p class="title">Mexico</p>
+            <p class="title" role="heading" aria-level="3">Mexico</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -604,31 +604,31 @@
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=103">
+              <img alt="picture of Paris" src="https://source.unsplash.com/random/256x170/?sig=103">
             </div>
-            <p class="title">Paris</p>
+            <p class="title" role="heading" aria-level="3">Paris</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=104">
+              <img alt="picture of Tokio" src="https://source.unsplash.com/random/256x170/?sig=104">
             </div>
-            <p class="title">Tokio</p>
+            <p class="title" role="heading" aria-level="3">Tokio</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
         <div class="tile is-parent">
           <div class="tile is-child box">
             <div class="image">
-              <img src="https://source.unsplash.com/random/256x170/?sig=105">
+              <img alt="picture of London" src="https://source.unsplash.com/random/256x170/?sig=105">
             </div>
-            <p class="title">London</p>
+            <p class="title" role="heading" aria-level="3">London</p>
             <p class="subtitle">Fri 27 Nov 2016</p>
-            <a class="button">Buy Tickets</a>
+            <button class="button">Buy Tickets</button>
           </div>
         </div>
       </div>
@@ -1029,10 +1029,10 @@
           <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-success" id="username" type="text">
-            <span class="icon is-small is-left">
+            <span aria-hidden="true" class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
-            <span class="icon is-small is-right">
+            <span aria-hidden="true" class="icon is-small is-right">
               <i class="fas fa-check"></i>
             </span>
           </div>
@@ -1043,10 +1043,10 @@
           <label class="label" for="email">Email</label>
           <div class="control has-icons-left has-icons-right">
             <input class="input is-danger" id="email" type="email" placeholder="Email input" value="hello@">
-            <span class="icon is-small is-left">
+            <span aria-hidden="true" class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
-            <span class="icon is-small is-right">
+            <span aria-hidden="true" class="icon is-small is-right">
               <i class="fas fa-exclamation-triangle"></i>
             </span>
           </div>
@@ -1082,7 +1082,7 @@
         </div>
 
         <div class="field">
-          <div class="control">
+          <radiogroup  class="control">
             <label class="radio">
               <input type="radio" name="question">
               Yes
@@ -1091,7 +1091,7 @@
               <input type="radio" name="question">
               No
             </label>
-          </div>
+          </radiogroup>
         </div>
 
         <div class="field is-grouped">
@@ -1106,7 +1106,7 @@
     </div>
   </section>
 
-    <section class="section" aria-labelledby="column-label">
+  <section class="section" aria-labelledby="column-label">
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-one-third">
