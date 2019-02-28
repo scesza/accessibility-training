@@ -321,7 +321,10 @@ a:hover {
         background-color: #49494b;
     }
 }
-
+.colorful {
+    color: #ff3860;
+    font-weight: bold;
+}
 .title.is-3 {
     font-weight: bold;
 }
