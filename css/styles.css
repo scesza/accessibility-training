@@ -322,6 +322,9 @@ a:hover {
     }
 }
 
+.title.is-3 {
+    font-weight: bold;
+}
 
 [role="tablist"] {
     margin: 0 0 -0.1em;
