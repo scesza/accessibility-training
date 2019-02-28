@@ -28,7 +28,7 @@
 
           <nav id="navbarMenu" aria-label="main navigation" class="navbar-menu">
             <div class="navbar-end">
-              <span class="navbar-item">
+              <span role="menuitem" class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-home"></i>
@@ -36,7 +36,7 @@
                   <span>Home</span>
                 </a>
               </span>
-              <span class="navbar-item">
+              <span role="menuitem"  class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-superpowers"></i>
@@ -44,7 +44,7 @@
                   <span>Examples</span>
                 </a>
               </span>
-              <span class="navbar-item">
+              <span role="menuitem"  class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fa fa-book"></i>
@@ -52,7 +52,7 @@
                   <span>Documentation</span>
                 </a>
               </span>
-              <span class="navbar-item">
+              <span role="menuitem" class="navbar-item">
                 <a class="button is-white is-outlined">
                   <span class="icon">
                     <i class="fab fa-github"></i>
@@ -66,7 +66,7 @@
       </div>
     </header>
 
-    <div class="hero-body" id="main">
+    <div class="hero-body" id="main" tabindex="0">
       <div class="container has-text-centered">
         <div class="column is-6 is-offset-3">
           <div class="title has-text-white" role="heading" aria-level="1">Engineering the Future</div>
@@ -350,7 +350,7 @@
   </div>
 
   <div class="tab-content container">
-    <div role="tabpanel" class="tab-pane" id="pane-1" class="level">
+    <div role="tabpanel" class="tab-pane level" id="pane-1" >
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -1040,7 +1040,7 @@
         <div class="field">
           <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" id="username"type="text">
+            <input class="input is-success" id="username" type="text">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -1328,7 +1328,7 @@
   <div id="modal-image2" class="modal modal-fx-superScaled">
     <div class="modal-background"></div>
     <div class="modal-content  is-image">
-      <img  alt="random image description"src="https://source.unsplash.com/random/?sig=3">
+      <img  alt="random image description" src="https://source.unsplash.com/random/?sig=3">
     </div>
     <button class="modal-close is-large"></button>
   </div>
