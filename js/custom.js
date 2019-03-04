@@ -2,7 +2,10 @@
   var burger = document.querySelector(".burger");
   var menu = document.querySelector("#" + burger.dataset.target);
   burger.addEventListener("click", function() {
+      let expanded =  burger.getAttribute('aria-expanded') === 'true' || false;
+      burger.setAttribute('aria-expanded', !expanded);
     burger.classList.toggle("is-active");
+      menu.hidden = expanded;
     menu.classList.toggle("is-active");
   });
 })();

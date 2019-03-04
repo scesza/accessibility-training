@@ -19,49 +19,53 @@
                     <img alt='epam logo' src="https://www.epam.com/content/dam/epam/global/logo_white-blue.svg"
                          style="width: 100%;">
                 </a>
-                <span role="button" aria-haspopup="true" aria-label="Toggle menu button" class="navbar-burger burger"
+                <span role="button" aria-expanded="false"
+                      aria-controls="navbarMenu"
+                      aria-label="Toggle menu button" class="navbar-burger burger"
                       data-target="navbarMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </span>
             </div>
 
-            <nav id="navbarMenu" aria-label="main navigation" class="navbar-menu">
-                <div class="navbar-end">
-                <span role="menuitem" class="navbar-item">
+            <nav id="navbarMenu"
+                 hidden
+                 aria-label="main navigation" class="navbar-menu">
+                <ul class="navbar-end">
+                <li role="menuitem" class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fa fa-home"></i>
                     </span>
                     <span>Home</span>
                   </a>
-                </span>
-                    <span role="menuitem" class="navbar-item">
+                </li>
+                <li role="menuitem" class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fab fa-superpowers"></i>
                     </span>
                     <span>Examples</span>
                   </a>
-                </span>
-                    <span role="menuitem" class="navbar-item">
+                </li>
+                <li role="menuitem" class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fa fa-book"></i>
                     </span>
                     <span>Documentation</span>
                   </a>
-                </span>
-                    <span role="menuitem" class="navbar-item">
+                </li>
+                <li role="menuitem" class="navbar-item">
                   <a href="#" class="button is-white is-outlined">
                     <span class="icon" aria-hidden="true">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>View Source</span>
                   </a>
-                </span>
-                </div>
+                </li>
+                </ul>
             </nav>
         </div>
     </div>
